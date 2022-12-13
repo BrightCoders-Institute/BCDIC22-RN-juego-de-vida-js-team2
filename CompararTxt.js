@@ -4,6 +4,7 @@ var stream2 = fs.createWriteStream("matrizCopia.txt");
 //función de comparación con stream2
 stream2.once('open', function (fd) {
     for (i = 0; i < 4; i++){
+        stream2[i]="1";
         if(i == 0){
             for(j = 0; j < 8; j++){
                 if (j == 0){
