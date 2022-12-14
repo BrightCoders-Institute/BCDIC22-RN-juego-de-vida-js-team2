@@ -1,19 +1,49 @@
-let campo = new Array();
+let campo = new Array(0);
 for (var i = 0; i < 4; i++) {
-    campo[i] = new Array(8);
+    campo[i] = new Array(0);
 }
 
 function random(min, max) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
 }
-let c = random(9, 20);
 
-for (let i = 0; i < 4; i++) {
-    for (let j = 0; j < 8; j++) {
+let fila = random(4, 8); //i
+let columna = random(8, 16); //j
+console.log(fila);
+console.log(columna);
+let cuentaPuntos = 0;
+
+for (let i = 0; i < fila; i++) {
+    for (let j = 0; j < columna; j++) {
         let random = Math.floor(Math.random() * 2);
-        random == 1 ? campo[i][j] = "*" : campo[i][j] = ".";
+        random == 1 ? campo.push([`*`]) : campo.push([`.`]);
+        cuentaPuntos = + 1;
+
+        if (i > 0) {
+            campo = campo.slice(-(columna));
+        }
     }
-    console.log(campo[i]);
+
+    console.log(campo.join(''));
+    console.log(cuentaPuntos);
 }
-//console.log(campo);
-//console.log(c);
+
+/*
+//comparar células
+const iterator = campo.values();
+
+for (const value of iterator) {
+    console.log(value);
+}*/
+
+let punto = `.`;
+let c = 0;
+for (var i = 0; i < fila; i++) {
+    for (var j = 0; j < columna; j++) {
+        if (campo[j].includes(punto) == true) {
+            console.log(campo[j], j);
+            c++;
+        }
+    }
+}
+console.log(c);
