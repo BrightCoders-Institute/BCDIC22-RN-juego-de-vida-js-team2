@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "Lint": "esLint"
+    "Lint": "esLint",
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
