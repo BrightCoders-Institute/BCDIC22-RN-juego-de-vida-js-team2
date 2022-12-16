@@ -29,7 +29,7 @@
 - - Ochoa Flores Esmeralda Jomary
 
 - Badges
-- - Codacy: A
+- - Codacy: A [![Codacy Badge](https://app.codacy.com/project/badge/Grade/a82002fc5bd54377a7602409969e8f0a)](https://www.codacy.com/gh/BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team2/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BrightCoders-Institute/BCDIC22-RN-juego-de-vida-js-team2&amp;utm_campaign=Badge_Grade)
 - - Linter: Correcto
 - - Prueba con jest
 
