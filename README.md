@@ -16,10 +16,10 @@
 - - Este proyecto intenta ilustrar el Juego de la Vida de John Conway mediante el uso de arrays bidimensionales. Está desarrollado en javascript e implementamos el uso de ESLint para estadarizar el código. Hicimos pruebas unitarias con jest y refactorizamos. Además utilizamos Codacy, un analizador de código.
 
 - How to Install and Run the Project.
-- - Para poder utilizar el codigo lo que se debe de hacer es descargar el repositorio desde GitHub. Para poder correr el proyecto, se abre la terminal en el directorio del proyecto y se ejecuta esta linea de codigo: node Celulas.js
+- - Para poder utilizar el codigo lo que se debe de hacer es descargar el repositorio desde GitHub. Para poder correr el proyecto, se abre la terminal en el directorio del proyecto y se ejecuta esta linea de codigo: node Celulas.js o node Prueba.js
 
 - How to Use the Project. 
-- - Si se requiere probar los demás archivos, sólo se pone el nombre seguido de "node". Ejemplo, node JuegoDeLaVida.js. Ningún archivo requiere la introducción de argumentos.
+- - Si se requiere probar los demás archivos, sólo se pone el nombre seguido de "node". Ejemplo, node Prueba.js. Ningún archivo requiere la introducción de argumentos.
 
 -  Créditos
 - - Baltazar Padilla Carlos Alejandro
@@ -29,3 +29,8 @@
 - - Ochoa Flores Esmeralda Jomary
 
 - Badges
+- - Codacy: A
+- - Linter: Correcto
+- - Prueba con jest
+
+![Puntuación de Codacy](img/Codacy-Team2.png)

@@ -1,12 +1,11 @@
 
 // se crea un array
 function Gencampo () {
-    const campogen = new Array(0)
-    // let fila = 4
-    // let columna = 8
+    const fila = 4
+    const campogen = new Array(fila)
 
     for (let i = 0; i < campogen.length; i++) {
-        campogen[i] = new Array(0)
+        campogen[i] = new Array(fila)
     }
 
     return campogen
@@ -104,12 +103,14 @@ function requisitos (conds) {
             }
         }
     }
+    console.log(gen)
     return gen
 }
 
 function iterator () {
-    const gens = 5
-    let arrayLlenado = Gencampo()
+    const gens = 4
+
+    let arrayLlenado
     let curavaLlenado = Gencampo()
 
     for (let i = 0; i < gens; i++) {
@@ -122,7 +123,51 @@ function iterator () {
         curavaLlenado = arrayLlenado
     }
 }
-const array = [1, 2, 3, 4, 5]
 
-console.log(muesGen(array))
-console.log(iterator())
+iterator()
+// const array = [1, 2, 3, 4, 5]
+
+// console.log(muesGen(array))
+// console.log(iterator())
+
+/*
+let fila = random(4, 8); //i
+let columna = random(8, 16); //j
+console.log(fila);
+console.log(columna);
+let cuentaPuntos = 0;
+
+for (let i = 0; i < fila; i++) {
+    for (let j = 0; j < columna; j++) {
+        let random = Math.floor(Math.random() * 2);
+        random == 1 ? campo.push([`*`]) : campo.push([`.`]);
+        cuentaPuntos =+ 1;
+
+        if (i > 0){
+        campo = campo.slice(-(columna));
+        }
+    }
+
+    console.log(campo.join(''));
+    console.log(cuentaPuntos);
+}
+
+//comparar células
+const iterator = campo.values();
+
+for (const value of iterator) {
+    console.log(value);
+}
+
+let punto = `.`;
+let c =0;
+for (var i = 0; i < fila; i++) {
+    for(var j = 0; j < columna; j++){
+        if (campo[j].includes(punto) == true) {
+            console.log(campo[j],j);
+            c++;
+        }
+    }
+}
+console.log(c);
+*/
