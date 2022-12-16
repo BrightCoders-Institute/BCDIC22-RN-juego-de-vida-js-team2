@@ -40,7 +40,7 @@ class Celulas {
         for (let i = 0; i < this.fila; i++) {
             for (let j = 0; j < this.columna; j++) {
                 const random = Math.floor(Math.random() * 2)
-                random === 1 ? this.matrizCelulas.push(['.']) : this.matrizCelulas.push(['.'])
+                random === 1 ? this.matrizCelulas.push(['*']) : this.matrizCelulas.push(['.'])
                 if (i > 0) {
                     this.matrizCelulas = this.matrizCelulas.slice(-(this.columna))
                 }
